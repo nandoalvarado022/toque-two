@@ -1,0 +1,282 @@
+body.front
+	background: $gris_02
+	.view-id-frontpage.view-display-id-block_12
+		margin-bottom: 10px
+		@media ($movil)
+			float: left
+	.view-id-encuesta.view-display-id-block_1
+		max-height: 525px
+		overflow: hidden
+		overflow-y: scroll
+		margin-top: 20px
+	.view-id-frontpage.view-display-id-block_15
+		margin: 10px 0 -10px
+		@media ($movil)
+			margin: 20px 0 20px
+	#twitter-widget-0
+		margin-bottom: 10px !important
+	.view-id-frontpage.view-display-id-block_13
+		margin-bottom: 10px
+	.view-id-frontpage.view-display-id-block_13
+		@media ($movil)
+			margin: 0 0 20px 0
+			float: left
+		h3
+			margin: 10px 0 0px
+			border-bottom: none
+	.view-id-users.view-display-id-block_1 // Empleado del mes
+		position: relative
+		margin: 20px 0 30px
+		img
+			margin: 0 auto
+			display: block
+		.views-field-field-nombre
+			position: absolute
+			bottom: 0px
+			background: rgba(53, 53, 53, 0.51)
+			color: white
+			padding: 5px 10px
+			font-size: 14px
+			left: 50px
+			width: 200px
+			box-sizing: border-box
+			text-align: center
+
+	.view-id-frontpage.view-display-id-block_1
+		position: relative
+		width: 1180px
+		margin: 10px auto 20px !important
+		background: $rojo_1
+		padding: 0px 0 0 70px
+		box-sizing: border-box
+		height: 368px
+		@media ($movil)
+			margin: 3px auto 20px !important
+			width: auto
+			padding: 0px 20px 0
+			margin: 10px 0 0
+			height: auto
+		.owl-item
+			position: relative
+		.views-field-field-tags
+			display: inline-block
+			margin-top: 20px
+		.views-field-field-image
+			float: right
+			margin: 0 0px 0 20px
+			@media ($movil)
+				margin: 0
+			img
+				max-width: 100%
+		.views-field-field-tags a, .views-field-field-tags-1 a
+			background: $rojo_2
+			color: white
+			border-radius: 20px
+			display: inline-block
+			padding: 5px 12px
+		.views-field-field-tags-1 a
+			display: block
+			text-align: center
+			margin-top: 20px
+		.views-field-title a, .views-field-title-1 a
+			color: white
+			font-size: 30px
+			margin: 10px 0 10px
+			display: block
+			font-weight: bold
+		.views-field-title a
+			@media ($movil)
+				display: none
+		.views-field-body, .views-field-body-1
+			color: white
+		.views-field-view-node a
+			right: 680px
+			color: white
+			padding: 10px 20px
+			background: $gris_1
+			text-transform: uppercase
+			position: absolute
+			bottom: 30px
+			@media ($movil)
+				position: relative
+				float: right
+				bottom: 35px
+		.owl-theme .owl-controls
+			display: inline-block
+			@media ($movil)
+		margin: 0
+	.view-id-frontpage.view-display-id-block_10, .view-id-frontpage.view-display-id-block_14 // Bloque de 3 noticias
+		float: left
+		width: 100%
+		margin: 20px auto
+
+		.title_body
+			color: white
+			a
+				font-family: Roboto
+				font-weight: bold
+				font-size: 16px
+				color: white
+		.views-row-1
+			
+			width: 650px
+			float: left
+			position: relative
+			@media ($movil)
+				width: auto
+			h2
+				margin: 0
+			p
+				display: none
+			.title_body
+				a
+					position: absolute
+					background: rgba(190, 8, 17, 0.8)
+					bottom: 5px
+					padding: 10px
+					height: 110px
+					font-size: 30px
+					width: 100%
+					box-sizing: border-box
+		
+
+		.views-row-2, .views-row-3
+			background: white
+			float: left
+			width: 530px
+			height: 186px
+			@media ($movil)
+				width: 100%
+				height: auto
+
+			h2 a
+				color: rgb(190, 8, 17)
+				font-weight: 900
+				font-size: 22px
+				display: block
+				margin-bottom: 10px
+
+			p
+				color: #000
+				font-size: 16px
+			img
+				@media ($movil)
+					width: 150px
+			.title_body
+				float: right
+				width: 330px
+				@media ($movil)
+					width: calc(100vw - 155px)
+					padding: 0px 20px 0 20px
+					box-sizing: border-box
+
+		.views-row-2
+			background: #fbcfd0
+	main
+		width: 1180px
+		margin: 0 auto
+		overflow: hidden
+		@media ($movil)
+			width: auto
+		> .content
+			width: 860px
+			float: left
+			@media ($movil)
+				width: auto
+				float: none
+		
+		
+		.view-id-frontpage.view-display-id-block_2, .view-id-frontpage.view-display-id-block_11
+			width: 860px
+			float: left
+			@media ($movil)
+				width: auto
+				float: none
+				margin: 0 auto
+				clear: both
+			img
+			.pager.pager-load-more
+				padding: 0px
+			.views-row:nth-child(3n+0)
+				margin-right: 0px
+				@media ($movil)
+					margin-right: auto
+			.views-row
+				display: inline-block
+				width: 275px
+				background: white
+				margin: 0 10px 20px 0
+				border: solid 1px $gris_03
+				vertical-align: top
+				height: 350px
+				@media ($movil)
+					display: block
+					margin: 20px auto
+			.views-field-title
+				border-bottom: solid 2px red
+				padding-bottom: 10px
+				margin: 10px
+				line-height: 22px
+				a
+					color: #000
+					font-weight: bold					
+			.views-field-body
+				padding: 0px 10px 10px
+				font-size: 14px
+	.fb-page.fb_iframe_widget
+		// margin-top: 20px
+	.ultimos_prog
+		overflow: hidden
+		float: left
+		margin-bottom: 20px
+		.view-id-frontpage.view-display-id-block_3
+			float: left
+			margin-right: 10px
+			@media ($movil)
+				float: none
+				text-align: center
+				margin-right: 0px
+			.views-field-field-video iframe
+				@media ($movil)
+					width: 100%
+					height: 200px
+			h2
+				margin: 0
+				a
+					font-family : Roboto
+					font-weight : bold
+					font-size : $font_me
+					line-height : 16px
+					color : #333333
+					color : rgb(51, 51, 51)
+					background: white
+					padding: 10px
+					display: block
+					margin: -6px 0 0px
+		.view-id-frontpage.view-display-id-block_4
+			float: right
+			width: 285px
+			@media ($movil)
+				margin: 20px
+				float: none
+				width: auto
+			.views-row
+				border: solid 1px #ceced0
+				@media ($movil)
+					text-align: center
+
+			.views-row-1
+				margin-bottom: 20px
+			h2
+				margin: 0
+				a
+					font-family : Roboto
+					font-weight : bold
+					font-size : $font_me
+					line-height : 16px
+					color : #333333
+					color : rgb(51, 51, 51)
+					background: white
+					padding: 10px
+					display: block
+					margin: -6px 0 0px

@@ -1,0 +1,309 @@
+#header
+	background: $gris_2
+	// overflow: hidden
+	color: white
+	
+	min-width: 1280px
+	height: 240px
+
+	@media ($movil)
+		padding: 0
+		position: fixed
+		z-index: 10
+		top: 0
+		overflow: visible
+		min-width: auto
+		height: auto
+	.section_logo
+		background: white
+		overflow: hidden
+		height: 120px
+		@media ($movil)
+			height: auto
+			figure
+				float: none
+				width: 123px
+				height: auto
+				margin: 0 auto
+		.pauta
+			display: block
+			width: 730px
+			margin: 15px 0 0 293px
+			position: relative
+			&:before
+				content: "Anuncio"
+				position: absolute
+				color: #717171
+				transform: rotate(-90deg)
+				right: -30px
+				font-size: 10px
+				top: 32px
+				text-transform: uppercase
+	.region.region-navigation //Menu desplegable
+		@media ($movil)
+			padding-top: 20px
+			display: none
+			position: absolute
+			top: 60px
+			background: #4d4d4d
+			width: 200px
+			height: 100vh
+			z-index: 10
+			li
+				list-style: none
+				margin-bottom: 10px
+				float: none
+				margin-left: 20px
+
+				a
+					color: white
+					text-transform: uppercase
+			h2
+				display: none
+
+	.menu.movil
+		float: left
+		width: 40px
+		background: #222
+		@media ($movil)
+			height: 60px
+			width: 50px
+			position: absolute
+			top: 0 
+			left: 0
+		img
+			margin: 0 auto
+			display: block
+			@media ($movil)
+				margin: 15px auto 0
+	
+	// .resultados
+	// 	color: #be0811
+	// 	width: 220px
+	// 	text-align: center
+	// 	line-height: 56px
+	// 	background: white
+	// 	font-weight: bold
+	// 	font-family: Roboto
+	// 	font-size: 20px
+	.logo
+		width: 220px
+		float: left
+		margin: 6px auto 0 6px
+		
+		@media ($movil)
+			width: calc(100% - 50px)
+			float: right
+			height: 60px
+			background: white
+		img
+			width: 100%
+			display: block
+			@media ($movil)
+				// width: 125px
+				margin: 0px auto 0
+				// float: left
+	.view-id-frontpage.view-display-id-block_9
+		background: #4d4d4d
+		height: 45px
+		padding: 10px 0 0 20px
+		box-sizing: border-box
+		width: 410px
+		a
+			color: white
+			padding: 5px 10px
+			background: white
+			border-radius: 5px
+			color: #e40613
+			font-weight: 500
+		.view-header
+			float: left
+			p
+				margin: 0 10px 0 0
+	.siguenos_menu
+		width: 1180px
+		// height: 213px
+		@media ($movil)
+			width: auto
+			text-align: center
+		.region.region-sidebar-first
+			display: inline-block
+			vertical-align: top
+			margin-top: 10px
+			@media ($movil)
+				width: 100%
+			label
+				display: none
+			input[type="submit"]
+				display: none
+			input[type="text"]
+				border-radius: 10px
+				background: rgba(255, 255, 255, 0.2)
+				border: none
+				outline: none
+				padding: 5px 10px
+				margin: 0px 10px 0 0
+				color: white
+				width: 300px
+				@media ($movil)
+					width: 90%
+					box-sizing: border-box
+					margin: 0px 0 5px
+			form
+				@media ($movil)
+					text-align: center
+		span.siguenos
+			background: $gris_3
+			color: white
+			padding: 10px 20px
+			height: 25px
+		.redes_bus
+			background: $gris_1
+			overflow: hidden
+			color: white
+			padding-left: 5px
+			height: 45px
+			@media ($movil)
+				height: auto
+				padding-left: 0px
+			a
+				display: inline-block
+				margin: 5px 2px 0
+				width: 32px
+				&.contextual-links-trigger
+					display: none
+			span
+				margin: 0px 0 0 10px
+				vertical-align: top
+				display: inline-block
+			input[type=text]
+
+		div.menu
+			padding-left: 30px
+			float: left
+			background: white
+			width: calc(100% - 30px)
+
+
+			.block-title
+				display: none
+			ul //Movil
+				li
+					ul
+						@media ($movil)
+							display: none !important
+			ul.menu
+				// overflow: hidden
+				margin: 5px 0 0
+				padding: 5px 0px 5px 0px
+				
+				li.sf-depth-1
+					list-style: none !important
+					float: left
+					margin-right: 58px
+					&.first
+						display: none
+					a
+						color: $gris_1
+						line-height: 30px
+						display: inline-block
+						padding-top: 30px
+						position: relative
+						height: 35px
+
+
+						&:before
+							content: ""
+							width: 30px
+							height: 30px
+							display: block
+							margin: 0 auto
+							position: absolute
+							top: 0px
+							left: 0px
+							right: 0px
+					
+					
+							
+							
+					ul:not(.sf-hidden) //Submenus
+						background: #4d4d4d
+						top: 65px !important
+						left: 0px !important
+						// padding: 0px 10px 10px
+						@media ($movil)
+							display: none !important
+							opacity: 0
+						li
+							// border-left: 5px #e40613 solid
+							padding: 10px
+							transition: 0.2s
+							border-left: 5px solid #5a5a5a
+							box-sizing: border-box
+							&:hover
+								border-left: 5px solid $rojo_1
+								background: #5a5a5a
+							a
+								color: white
+								padding-top: 0px
+								height: 0px
+							&.sfHover.sf-depth-2
+								ul
+									left: 187px !important
+									top: 0px !important
+
+					&.last
+						margin-right: 0px
+
+
+				li:nth-child(1).sf-depth-1 > a
+					&:before
+						background: url(../images/icons/home.png)
+				li:nth-child(2).sf-depth-1 > a
+					&:before
+						background: url(../images/icons/futbol.png)
+				li:nth-child(3).sf-depth-1 > a
+					&:before
+						background: url(../images/icons/basket.png)
+				li:nth-child(4).sf-depth-1 > a
+					&:before
+						background: url(../images/icons/beisbol.png)
+				li:nth-child(5).sf-depth-1 > a
+					&:before
+						background: url(../images/icons/tenis.png)
+						// background: url(../images/icons/especiales.png)
+				li:nth-child(6).sf-depth-1 > a
+					&:before
+						content: "OD"
+						background: black
+						border-radius: 50%
+						color: white
+						text-align: center
+						font-size: 14px
+						line-height: 30px
+				li:nth-child(7).sf-depth-1 > a
+					&:before
+						background: url(../images/icons/toque-tv.png)
+				li:nth-child(8).sf-depth-1 > a
+					&:before
+						background: url(../images/icons/especiales.png)
+				li:nth-child(9).sf-depth-1 > a /*Opinion*/
+					&:before
+						background: url(../images/OPINION.png)
+						background-position: 0px -2px 
+						background-size: 34px
+						background-repeat: no-repeat
+				li:nth-child(10).sf-depth-1 > a
+					&:before
+						background: url(../images/icons/especiales.png)
+.sf-menu li:hover > ul,	.sf-menu li.sfHover > ul 
+	// left: 0
+	top: 65px !important
+	@media ($movil)
+		display: none !important
+.sf-hidden
+
+
+
+
+			
