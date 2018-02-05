@@ -1,3 +1,79 @@
+.view-id-frontpage.view-display-id-block_10,
+.view-id-frontpage.view-display-id-block_14,
+.view-id-multimedia.view-display-id-block_4,
+	// Bloque de 3 noticias
+	float: left
+	width: 100%
+	margin: 20px auto
+
+	.title_body
+		color: white
+		a
+			font-family: Roboto
+			font-weight: bold
+			font-size: 16px
+			color: white
+	.views-row-1
+		
+		width: 650px
+		float: left
+		position: relative
+		@media ($movil)
+			width: auto
+		h2
+			margin: 0
+		p
+			display: none
+		.title_body
+			a
+				position: absolute
+				background: rgba(190, 8, 17, 0.8)
+				bottom: 5px
+				padding: 10px
+				height: 110px
+				font-size: 30px
+				width: 100%
+				box-sizing: border-box
+	
+
+	.views-row-2, .views-row-3
+		background: white
+		float: left
+		width: 530px
+		height: 186px
+		@media ($movil)
+			width: 100%
+			height: auto
+
+		h2 a
+			color: rgb(190, 8, 17)
+			font-weight: 900
+			font-size: 22px
+			display: block
+			margin-bottom: 10px
+
+		p
+			color: #000
+			font-size: 16px
+		img
+			@media ($movil)
+				width: 150px
+		.title_body
+			float: right
+			width: 330px
+			@media ($movil)
+				width: calc(100vw - 155px)
+				padding: 0px 20px 0 20px
+				box-sizing: border-box
+
+	.views-row-2
+		background: #fbcfd0
+	
+
+.left
+	float: left
+.right
+	float: right
 #streaming_canal
 	background: #be0811
 	margin: 10px 0 0px 0
@@ -57,8 +133,13 @@
 strong
 	font-weight: bold
 
-body.node-type-article, .node-type-galeria, .page-taxonomy-term
-	#container, #main, body.page-quienes-somos, body.page-quienes-somos #container, body.page-taxonomy-term-155 #container
+body.node-type-article, 
+.node-type-galeria, 
+.page-taxonomy-term	#container, #main, 
+body.page-quienes-somos, 
+body.page-quienes-somos #container, 
+body.page-taxonomy-term-155 #container, 
+div#container
 		width: 1180px
 		background: white
 

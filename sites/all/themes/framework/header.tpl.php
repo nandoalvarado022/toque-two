@@ -9,7 +9,7 @@
 		<section class="section_logo">
 			<figure class="logo">
 				<a href="/">
-					<img src="<?php echo $base_path?>images/icons/toque-sports-fondo-blanco.jpg">
+					<img src="<?php echo $base_path?>images/logo.png">
 				</a>
 			</figure>
 
