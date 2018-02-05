@@ -32,6 +32,7 @@ body.page-node-4974
 						color: white
 						font-size: 26px
 						padding: 10px
+						background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(0,0,0,1) 100%)
 			.views-row:not(.views-row-1)
 				float: left
 				width: 270px
@@ -56,6 +57,7 @@ body.page-node-4974
 						color: white
 						font-size: 22px
 						padding: 10px
+						background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(0,0,0,1) 100%)
 			.views-row:nth-child(1n+6)
 			
 				width: 295px
@@ -87,14 +89,15 @@ body.page-node-4974
 					padding: 5px 10px
 					width: 80%
 					@media ($movil)
-					top: auto
-					bottom: 0px
+						top: auto
+						bottom: 0px
 					a
 						color: #333333
 						font-size: 16px
 						font-weight: bold
 		#podcast 
-			margin-top: 20px
+			@media ($movil)
+				margin-top: 20px
 			iframe
 				height: 200px
 		
