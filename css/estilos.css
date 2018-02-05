@@ -508,9 +508,9 @@ body {
         height: auto; }
         #header .section_logo figure {
           float: none;
-          width: 123px;
           height: auto;
-          margin: 0 auto; } }
+          margin: 0 auto;
+          width: 200px; } }
     #header .section_logo .pauta {
       display: block;
       width: 730px;
