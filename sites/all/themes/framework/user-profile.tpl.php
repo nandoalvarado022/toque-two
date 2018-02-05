@@ -1,5 +1,6 @@
 <!-- controller -->
 <?php 
+    header('Location: /');
     $uid=$user_profile["field_nombre"]["#object"]->uid;
     $user_data=user_load($uid);
     $descripcion=$user_data->field_descripcion["und"][0]["value"];
