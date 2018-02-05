@@ -1,4 +1,4 @@
-body.page-node-4702
+body.page-node-4974
 	.pauta
 		margin: 30px auto
 		display: block
@@ -12,6 +12,9 @@ body.page-node-4702
 			.views-row-1
 				height: 360px
 				float: left
+				@media ($movil)
+					height: auto
+					float: none
 				&:before
 					content: ""
 					width: 100%
@@ -20,6 +23,8 @@ body.page-node-4702
 					bottom: -90px
 					box-shadow: '0px -90px 60px 20px #00000063'
 				h2
+					@media ($movil)
+
 					a
 						bottom: 0px
 						position: absolute
@@ -31,8 +36,18 @@ body.page-node-4702
 				float: left
 				width: 270px
 				height: 180px
+				@media ($movil)
+					float: none
+					margin: 0 auto
+					width: auto
+					height: auto
 				img
 					height: 100%
+					max-width: 100%
+					@media ($movil)
+						height: auto
+						
+
 				h2
 					a
 						bottom: 0px
@@ -42,8 +57,17 @@ body.page-node-4702
 						font-size: 22px
 						padding: 10px
 			.views-row:nth-child(1n+6)
+			
 				width: 295px
-		.view-id-multimedia.view-display-id-block_2 // segundo bloque
+				@media ($movil)
+					width: auto
+				
+		#ultimas_noticias
+			width: 860px
+			overflow: hidden
+			@media ($movil)
+				width: auto
+			.view-id-multimedia.view-display-id-block_2 // segundo bloque
 			background: white
 			.views-row
 				width: 212px
@@ -52,6 +76,9 @@ body.page-node-4702
 				display: inline-block
 				position: relative
 				height: 200px
+				@media ($movil)
+					display: block
+					width: auto
 				h2
 					margin: 0
 					position: absolute
@@ -59,15 +86,18 @@ body.page-node-4702
 					background: white
 					padding: 5px 10px
 					width: 80%
+					@media ($movil)
+					top: auto
+					bottom: 0px
 					a
 						color: #333333
 						font-size: 16px
 						font-weight: bold
-		#podcast iframe
-			height: 200px
-		#ultimas_noticias
-			width: 860px
-			overflow: hidden
+		#podcast 
+			margin-top: 20px
+			iframe
+				height: 200px
+		
 
 			
 		
@@ -91,6 +121,7 @@ body.page-node-4702
 			text-transform: uppercase
 			padding: 10px 20px
 			margin: 0px
+			text-align: center
 		&:after
 			content: ""
 			position: absolute
