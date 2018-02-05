@@ -43,7 +43,7 @@ include "header.tpl.php";?>
 
 			<?php
 				$view=views_get_view('multimedia');
-				print $view->preview('block_4');?>
+				// print $view->preview('block_4');?>
 		</section>
 
 	</div>
