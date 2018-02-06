@@ -120,11 +120,7 @@ th { padding-right: 1em; }
  * 2.LAYOUT
  */
 
-#container { 
-  margin: 0 auto;
-  padding: 0 10px 30px 10px;
-  width: 940px;
-}
+
 
 /**
  * 3.MAIN
