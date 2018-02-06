@@ -186,9 +186,7 @@ body.node-type-article,
 .page-taxonomy-term #container, #main,
 body.page-quienes-somos,
 body.page-quienes-somos #container,
-body.page-taxonomy-term-155 #container,
-div#container {
-  width: 1180px;
+body.page-taxonomy-term-155 #container {
   background: white; }
   @media (max-width: 480px) {
     body.node-type-article,
@@ -196,11 +194,13 @@ div#container {
     .page-taxonomy-term #container, #main,
     body.page-quienes-somos,
     body.page-quienes-somos #container,
-    body.page-taxonomy-term-155 #container,
-    div#container {
+    body.page-taxonomy-term-155 #container {
       width: auto;
       float: none;
       padding: 0; } }
+
+div#container {
+  width: 1180px; }
 
 .owl-prev {
   position: absolute;
