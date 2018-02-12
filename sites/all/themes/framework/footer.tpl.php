@@ -1,7 +1,7 @@
 <footer>
 	<figure class="logo">
 		<a href="/">
-			<img src="<?php echo $base_path?>images/logo-footer-2.png">
+			<img src="<?php echo $base_path?>images/logo.png">
 		</a>
 	</figure>
 
