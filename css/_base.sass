@@ -1,3 +1,94 @@
+.page-taxonomy-term h1, body.page-user h1 
+	font-weight: 900
+	letter-spacing: -0.5px
+	line-height: 40px
+	font-size: 35px
+	margin: 20px 0 0
+	padding: 10px 0px
+	background: #333333
+	color: white
+	position: relative
+	width: 1220px
+	margin-left: -20px
+	box-sizing: border-box
+	text-transform: uppercase
+	@media ($movil)
+		width: auto
+		font-size: 24px
+		text-transform: uppercase
+		padding: 10px 20px
+		margin: 0px
+	&:after
+		content: ""
+		position: absolute
+		width: 0
+		height: 0
+		border-top: 20px solid #be0811
+		border-right: 20px solid transparent
+		bottom: -20px
+		z-index: 10
+		right: 0px
+		@media ($movil)
+			display: none
+	&:before
+		content: ""
+		position: absolute
+		width: 0
+		height: 0
+		border-top: 20px solid #be0811
+		border-left: 20px solid transparent
+		bottom: -20px
+		z-index: 10
+		left: 0px
+		@media ($movil)
+			display: none
+	figure.icon
+		height: 30px
+		width: 30px
+		display: inline-block
+		background-size: contain !important
+		margin: 0 10px 0 20px
+
+
+.view-id-frontpage.view-display-id-block_2, .view-id-frontpage.view-display-id-block_11, .view-id-usuarios.view-display-id-block_2
+	width: 860px
+	float: left
+	@media ($movil)
+		width: auto
+		float: none
+		margin: 0 auto
+		clear: both
+	img
+	.pager.pager-load-more
+		padding: 0px
+	.views-row:nth-child(3n+0)
+		margin-right: 0px
+		@media ($movil)
+			margin-right: auto
+	.views-row
+		display: inline-block
+		width: 275px
+		background: white
+		margin: 0 10px 20px 0
+		border: solid 1px $gris_03
+		vertical-align: top
+		height: 350px
+		@media ($movil)
+			display: block
+			margin: 20px auto
+	.views-field-title
+		border-bottom: solid 2px red
+		padding-bottom: 10px
+		margin: 10px
+		line-height: 22px
+		a
+			color: #000
+			font-weight: bold					
+	.views-field-body
+		padding: 0px 10px 10px
+		font-size: 14px
+
+
 .view-id-frontpage.view-display-id-block_10,
 .view-id-frontpage.view-display-id-block_14,
 .view-id-multimedia.view-display-id-block_4,

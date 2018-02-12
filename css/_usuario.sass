@@ -1,0 +1,94 @@
+body.page-user
+	h1
+		padding-left: 75px
+	.top
+		position: relative
+		margin-bottom: 14px
+		#img_profile
+			@media ($movil)
+				width: 100%
+				height: auto
+		.description
+				position: absolute
+				top: 390px
+				width: 660px
+				background: white
+				padding: 20px 20px 40px 20px
+				left: 290px
+				z-index: 1
+				@media ($movil)
+					width: auto
+					position: relative
+					top: -350px
+					left: 0px
+					margin: 0 20px
+	.right
+		width: calc(100% - 350px)
+		background: url(../images/cancha-bg.jpg)
+		height: 550px
+		background-size: 1140px
+		background-position: 0px -90px
+		background-repeat: no-repeat
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			background: white
+			width: 100%
+			height: 100%
+			opacity: 0.5
+			@media ($movil)
+				margin: -70px 0
+		@media ($movil)
+			position: relative
+			
+			left: 0
+			width: auto
+			margin: -87px 0
+			padding-top: 70px
+			height: 780px
+			top: -340px
+		h3
+			text-transform: uppercase
+			border: none
+			@media ($movil)
+				text-align: center
+	.view-id-usuarios.view-display-id-block_1
+		position: relative
+		margin-top: 60px
+		float: right
+		@media ($movil)
+			margin-top: 40px
+		.views-row
+			margin: 50px 60px 0 0
+			display: inline-block
+			position: relative
+			height: 180px
+			width: 180px
+			&:before
+				content: ''
+				background: #000
+				position: absolute
+				height: 100%
+				width: 100%
+				top: 0px
+				left: 0px
+				border-radius: 50%
+				opacity: 0.5
+			@media ($movil)
+				display: block
+				margin: 30px auto 0
+				width: 180px
+			h2 				
+				font-size: 15px
+				width: 180px
+				position: absolute
+				margin-top: 70px
+				text-align: center
+				a
+					color: white
+					line-height: 22px	
+			img
+				border-radius: 50%
+				
+				
