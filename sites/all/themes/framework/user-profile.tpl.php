@@ -5,7 +5,7 @@
     // header('Location: /');
     $uid=$user_profile["field_nombre"]["#object"]->uid;
     $user_data=user_load($uid);
-    $picture_uri=$user_data->picture->uri;
+    $picture_uri=$user_data->field_foto_vertical["und"][0]["uri"];
     // echo "<pre>"; print_r($user_data);
     $descripcion=$user_data->field_descripcion["und"][0]["value"];
     $vista_mas_leidos=views_get_view('usuarios')->preview('block_1');
