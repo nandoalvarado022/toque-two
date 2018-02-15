@@ -1672,6 +1672,9 @@ body.page-user .right {
   background-repeat: no-repeat;
   height: 550px;
   position: relative; }
+  @media (max-width: 480px) {
+    body.page-user .right {
+      background-position: 0px center; } }
   body.page-user .right:before {
     content: "";
     position: absolute;
@@ -1685,6 +1688,7 @@ body.page-user .right {
   @media (max-width: 480px) {
     body.page-user .right {
       position: relative;
+      background-size: 1540px;
       left: 0;
       width: auto;
       margin: -87px 0;

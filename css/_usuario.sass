@@ -32,6 +32,8 @@ body.page-user
 		background-repeat: no-repeat
 		height: 550px
 		position: relative
+		@media ($movil)
+			background-position: 0px center
 		&:before
 			content: ""
 			position: absolute
@@ -43,7 +45,7 @@ body.page-user
 				margin: -70px 0
 		@media ($movil)
 			position: relative
-			
+			background-size: 1540px
 			left: 0
 			width: auto
 			margin: -87px 0
