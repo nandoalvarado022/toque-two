@@ -43,13 +43,16 @@
 	.region.region-navigation //Menu desplegable
 		@media ($movil)
 			padding-top: 20px
-			display: none
 			position: absolute
-			top: 60px
-			background: #4d4d4d
+			top: 50px
+			background: #9a070e
 			width: 200px
 			height: 100vh
 			z-index: 10
+			transition: 0.5 ease
+			margin-left: -200px
+			transition: 0.5s ease
+			left: 0px
 			li
 				list-style: none
 				margin-bottom: 10px
@@ -61,22 +64,28 @@
 					text-transform: uppercase
 			h2
 				display: none
-
+		
 	.menu.movil
 		float: left
 		width: 40px
 		background: #222
-		@media ($movil)
-			height: 60px
-			width: 50px
-			position: absolute
-			top: 0 
-			left: 0
+		height: 50px
+		width: 50px
+		position: absolute
+		top: 0 
+		left: 0
+		&.active
+			.region.region-navigation //Menu desplegable
+				margin-left: 0px
+				box-shadow: 2px 2px 10px #6f1522
 		img
 			margin: 0 auto
-			display: block
-			@media ($movil)
-				margin: 15px auto 0
+			display: block		
+			margin: 15px auto 0
+			width: 29px
+			height: 24px
+	
+
 	
 	// .resultados
 	// 	color: #be0811
@@ -179,12 +188,13 @@
 				display: inline-block
 			input[type=text]
 
-		div.menu
+	div.menu
 			padding-left: 30px
 			float: left
 			background: white
 			width: calc(100% - 30px)
-
+			@media ($movil)
+				padding-left: 0
 
 			.block-title
 				display: none
@@ -196,12 +206,16 @@
 			ul.menu
 				// overflow: hidden
 				margin: 5px 0 0
-				padding: 5px 0px 5px 0px
+				padding: 5px 0px 5px 0px 
 				
 				li.sf-depth-1
 					list-style: none !important
 					float: left
 					margin-right: 58px
+					@media ($movil)
+						margin: 0
+						border-bottom: 1px solid white
+						width: 100%
 					&.first
 						display: none
 					a
@@ -211,8 +225,10 @@
 						padding-top: 30px
 						position: relative
 						height: 35px
-
-
+						@media ($movil)							
+							padding: 0 0 0 50px							
+							margin: 5px 0 2px 10px
+							color: white
 						&:before
 							content: ""
 							width: 30px
@@ -223,6 +239,10 @@
 							top: 0px
 							left: 0px
 							right: 0px
+							@media ($movil)
+								margin: 0
+								border-radius: 50%
+
 					
 					
 							
@@ -263,15 +283,23 @@
 				li:nth-child(2).sf-depth-1 > a
 					&:before
 						background: url(../images/icons/futbol.png)
+						@media ($movil)
+							background: url(../images/icons/futbol.png) white
 				li:nth-child(3).sf-depth-1 > a
 					&:before
 						background: url(../images/icons/basket.png)
+						@media ($movil)
+							background: url(../images/icons/basket.png) white
 				li:nth-child(4).sf-depth-1 > a
 					&:before
 						background: url(../images/icons/beisbol.png)
+						@media ($movil)
+							background: url(../images/icons/beisbol.png) white
 				li:nth-child(5).sf-depth-1 > a
 					&:before
 						background: url(../images/icons/tenis.png)
+						@media ($movil)
+							background: url(../images/icons/tenis.png) white
 						// background: url(../images/icons/especiales.png)
 				li:nth-child(6).sf-depth-1 > a
 					&:before
@@ -285,9 +313,13 @@
 				li:nth-child(7).sf-depth-1 > a
 					&:before
 						background: url(../images/icons/toque-tv.png)
+						@media ($movil)
+							background: url(../images/icons/toque-tv.png) white
 				li:nth-child(8).sf-depth-1 > a
 					&:before
 						background: url(../images/icons/especiales.png)
+						@media ($movil)
+							background: url(../images/icons/especiales.png) white
 				li:nth-child(9).sf-depth-1 > a /*Opinion*/
 					&:before
 						background: url(../images/OPINION.png)
@@ -297,6 +329,8 @@
 				li:nth-child(10).sf-depth-1 > a
 					&:before
 						background: url(../images/icons/especiales.png)
+						@media ($movil)
+							background: url(../images/icons/especiales.png) white
 .sf-menu li:hover > ul,	.sf-menu li.sfHover > ul 
 	// left: 0
 	top: 65px !important

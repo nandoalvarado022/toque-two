@@ -33,7 +33,7 @@
 
 		
 		<section>
-			<div class="menu movil">
+			<div class="menu movil" id="menuMovil">
 				<img src="<?php echo $base_path?>images/icons/menu-hambur.png">
 				<?php print render($page["navigation"]);?>
 			</div>
@@ -119,9 +119,7 @@
 
 <script>
 	$(".menu.movil").click(function() {
-	  $(".region.region-navigation").slideToggle( "slow", function() {
-	    // Animation complete.
-	  });
+		$(this).toggleClass("active");
 	});
 </script>
 
