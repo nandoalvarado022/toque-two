@@ -652,7 +652,6 @@ body {
         margin-left: 20px; } }
     @media (max-width: 480px) and (max-width: 480px) {
       #header .region.region-navigation li {
-        margin-left: 50px;
         margin-bottom: 0; } }
   @media (max-width: 480px) {
         #header .region.region-navigation li a {
@@ -790,7 +789,8 @@ body {
         top: 0 !important;
         left: 0 !important;
         width: auto !important;
-        background: #9c3a3f; } }
+        background: #9c3a3f;
+        display: none; } }
     #header div.menu ul.menu {
       margin: 5px 0 0;
       padding: 5px 0px 5px 0px; }
@@ -798,6 +798,52 @@ body {
         #header div.menu ul.menu {
           margin: 0;
           padding: 0; } }
+      #header div.menu ul.menu a.arrow {
+        border: solid 2px white;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        border-left: 0px;
+        border-top: 0px;
+        transform: rotate(45deg);
+        float: right;
+        margin-top: 8px;
+        transition: 0.5s ease;
+        margin-right: 20px; }
+        #header div.menu ul.menu a.arrow.active {
+          transform: rotate(-135deg);
+          margin-top: 22px; }
+      #header div.menu ul.menu li.active > ul {
+        display: block; }
+      #header div.menu ul.menu li:not(.sf-depth-1) {
+        padding-left: 20px; }
+      #header div.menu ul.menu li a:not(.arrow) {
+        font-weight: 100;
+        color: #4d4d4d;
+        line-height: 30px;
+        display: inline-block;
+        padding-top: 30px;
+        position: relative;
+        height: 35px; }
+        @media (max-width: 480px) {
+          #header div.menu ul.menu li a:not(.arrow) {
+            padding: 0 0 0 50px;
+            margin: 5px 0 2px 10px;
+            color: white; } }
+        #header div.menu ul.menu li a:not(.arrow):before {
+          content: "";
+          width: 30px;
+          height: 30px;
+          display: block;
+          margin: 0 auto;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          right: 0px; }
+          @media (max-width: 480px) {
+            #header div.menu ul.menu li a:not(.arrow):before {
+              margin: 0;
+              border-radius: 50%; } }
       #header div.menu ul.menu li.sf-depth-1 {
         list-style: none !important;
         float: left;
@@ -807,37 +853,11 @@ body {
             margin: 0;
             border-bottom: 1px solid white;
             width: 100%; } }
+        @media (max-width: 480px) {
+          #header div.menu ul.menu li.sf-depth-1 > a:not(.arrow) {
+            margin: 10px 0 5px 10px !important; } }
         #header div.menu ul.menu li.sf-depth-1.first {
           display: none; }
-        #header div.menu ul.menu li.sf-depth-1 a {
-          color: #4d4d4d;
-          line-height: 30px;
-          display: inline-block;
-          padding-top: 30px;
-          position: relative;
-          height: 35px;
-          /* margin-top: 10px !important; */
-          }
-          @media (max-width: 480px) {
-            #header div.menu ul.menu li.sf-depth-1 a {
-              padding: 0 0 0 50px;
-              margin: 5px 0 2px 10px;
-              color: white;
-              } }
-          #header div.menu ul.menu li.sf-depth-1 a:before {
-            content: "";
-            width: 30px;
-            height: 30px;
-            display: block;
-            margin: 0 auto;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            right: 0px; }
-            @media (max-width: 480px) {
-              #header div.menu ul.menu li.sf-depth-1 a:before {
-                margin: 0;
-                border-radius: 50%; } }
         #header div.menu ul.menu li.sf-depth-1 ul:not(.sf-hidden) {
           background: #4d4d4d;
           top: 65px !important;
@@ -863,6 +883,9 @@ body {
               top: 0px !important; }
         #header div.menu ul.menu li.sf-depth-1.last {
           margin-right: 0px; }
+      @media (max-width: 480px) {
+        #header div.menu ul.menu li.sf-depth-2 li {
+          margin-left: 0px !important; } }
       #header div.menu ul.menu li:nth-child(1).sf-depth-1 > a:before {
         background: url(../images/icons/home.png); }
       #header div.menu ul.menu li:nth-child(2).sf-depth-1 > a:before {
@@ -885,7 +908,7 @@ body {
         @media (max-width: 480px) {
           #header div.menu ul.menu li:nth-child(5).sf-depth-1 > a:before {
             background: url(../images/icons/tenis.png) white; } }
-      #header div.menu ul.menu li:nth-child(6).sf-depth-1 > a:before {
+      #header div.menu ul.menu li:nth-child(6).sf-depth-1 > a:not(.arrow):before {
         content: "OD";
         background: black;
         border-radius: 50%;
@@ -916,9 +939,10 @@ body {
 
 .sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
   top: 65px !important; }
-  @media (max-width: 480px) {
-    .sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
-      display: none !important; } }
+
+@media (max-width: 480px) {
+  .sf-menu ul li {
+    width: auto; } }
 
 body.front {
   background: #e9ebee; }

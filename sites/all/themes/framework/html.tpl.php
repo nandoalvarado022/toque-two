@@ -22,6 +22,7 @@ $base_theme=path_to_theme();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php print $head_title; ?></title>
 	<?php print $styles; ?>
+	<link rel="manifest" href="/manifest.json">
 	<link rel="stylesheet" type="text/css" href="<?php echo $base_url?>/css/owl.theme.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $base_url?>/css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $base_url?>//css/estilos.css?<?php echo date('l jS \of F Y h:i:s A'); ?>">

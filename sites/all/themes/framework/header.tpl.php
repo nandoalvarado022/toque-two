@@ -33,10 +33,9 @@
 
 		
 		<section>
-			<div class="menu movil" id="menuMovil">
-				<img src="<?php echo $base_path?>images/icons/menu-hambur.png">
-				<?php print render($page["navigation"]);?>
-			</div>
+			
+
+			<?php include "menu-movil.html";?>
 
 			
 			<div class="float_r siguenos_menu" data-width="987px">
@@ -118,8 +117,12 @@
 </header>
 
 <script>
-	$(".menu.movil").click(function() {
+	$(".menu.movil img").click(function() {
+		$(this).parent().toggleClass("active");
+	});
+	$(".arrow").click(function() {
 		$(this).toggleClass("active");
+		$(this).parent().toggleClass("active");
 	});
 </script>
 
