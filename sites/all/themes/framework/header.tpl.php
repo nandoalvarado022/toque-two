@@ -124,6 +124,14 @@
 		$(this).toggleClass("active");
 		$(this).parent().toggleClass("active");
 	});
+	scrollAntes=0;
+	$(window).on('scroll', function() {
+		scrollAhora=$(window).scrollTop();
+		if(scrollAntes>scrollAhora) $(".redes_bus").show();
+		else $(".redes_bus").hide();
+		console.log(scrollAntes+"-"+scrollAhora);
+		scrollAntes=scrollAhora;
+	});
 </script>
 
 <?php 
