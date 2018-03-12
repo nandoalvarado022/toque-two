@@ -127,8 +127,8 @@
 	scrollAntes=0;
 	$(window).on('scroll', function() {
 		scrollAhora=$(window).scrollTop();
-		if(scrollAntes>scrollAhora) $("body").addClass("sin_redes_bus");
-		else $("body").removeClass("sin_redes_bus");
+		if(scrollAntes>scrollAhora) $("body").removeClass("sin_redes_bus");
+		else $("body").addClass("sin_redes_bus");
 		console.log(scrollAntes+"-"+scrollAhora);
 		scrollAntes=scrollAhora;
 	});
