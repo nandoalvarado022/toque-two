@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
+body.sin_redes_bus {
+  padding-top: 50px !important; }
+  body.sin_redes_bus .redes_bus {
+    display: none; }
+
 .page-taxonomy-term h1, body.page-user h1 {
   font-weight: 900;
   letter-spacing: -0.5px;

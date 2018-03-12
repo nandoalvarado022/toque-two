@@ -127,8 +127,8 @@
 	scrollAntes=0;
 	$(window).on('scroll', function() {
 		scrollAhora=$(window).scrollTop();
-		if(scrollAntes>scrollAhora) $(".redes_bus").show();
-		else $(".redes_bus").hide();
+		if(scrollAntes>scrollAhora) $("body").addClass("sin_redes_bus");
+		else $("body").removeClass("sin_redes_bus");
 		console.log(scrollAntes+"-"+scrollAhora);
 		scrollAntes=scrollAhora;
 	});
