@@ -19,5 +19,7 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "/?utm_source=homescreen"
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "landscape"
 }
