@@ -1,7 +1,7 @@
 {
+  "short_name": "Toquesports",
   "name": "Toque Sports",
   "background_color": "red",
-  "short_name": "Toquesports",
   "icons": [
     {
       "src": "http://toquesports.com/images/logo-small.png",
@@ -19,5 +19,5 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "index.php?launcher=true"
+  "start_url": "/?utm_source=homescreen"
 }
