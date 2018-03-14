@@ -1,22 +1,23 @@
 {
-  "short_name": "Toquesports",
   "name": "Toque Sports",
+  "background_color": "red",
+  "short_name": "Toquesports",
   "icons": [
     {
-      "src": "http://toquesports.com/sites/default/files/toque-sports-fondo-trans.png",
+      "src": "http://toquesports.com/images/logo-small.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "http://toquesports.com/sites/default/files/toque-sports-fondo-trans.png",
+      "src": "http://toquesports.com/images/logo-small.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "http://toquesports.com/sites/default/files/toque-sports-fondo-trans.png",
+      "src": "http://toquesports.com/images/logo-small.png",
       "type": "image/png",
       "sizes": "192x192"
     }
   ],
-  "start_url": "index.html?launcher=true"
+  "start_url": "index.php?launcher=true"
 }
