@@ -45,7 +45,10 @@
 					</div>
 
 					<div class="redes_bus">
-						<?php print render($page["sidebar_first"]); //print $search_box;?>
+						<?php // print render($page["sidebar_first"]); //print $search_box;?>
+						<a target="_BLANK" id="btnSuscripcion" href="/suscripcion">
+							<img src="/images/toque_suscripcion.gif" alt="Suscribete el Newsletter de ToqueSports ">
+						</a>
 						<span class="siguenos desktop">
 							SÍGUENOS
 						</span>
@@ -125,13 +128,15 @@
 		$(this).parent().toggleClass("active");
 	});
 	scrollAntes=0;
-	$(window).on('scroll', function() {
-		scrollAhora=$(window).scrollTop();
-		if(scrollAntes>scrollAhora) $("body").removeClass("sin_redes_bus");
-		else $("body").addClass("sin_redes_bus");
-		console.log(scrollAntes+"-"+scrollAhora);
-		scrollAntes=scrollAhora;
-	});
+	if(screen.width<=480){
+		$(window).on('scroll', function() {
+			scrollAhora=$(window).scrollTop();
+			if(scrollAntes>scrollAhora) $("body").removeClass("sin_redes_bus");
+			else $("body").addClass("sin_redes_bus");
+			console.log(scrollAntes+"-"+scrollAhora);
+			scrollAntes=scrollAhora;
+		});
+	}
 </script>
 
 <?php 

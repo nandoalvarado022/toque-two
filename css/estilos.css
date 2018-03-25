@@ -267,9 +267,6 @@ body.sin_redes_bus {
       display: block;
       margin: 0px auto 0px; } }
 
-.pauta {
-  background: #dedede; }
-
 .google-auto-placed {
   position: fixed;
   bottom: -10px; }
@@ -538,11 +535,9 @@ body {
       border-radius: 50%;
       height: 60px;
       width: 60px; }
-  .view-id-articulo.view-display-id-block_1 .views-field-field-twitter, .view-id-articulo.view-display-id-block_2 .views-field-field-twitter, .view-id-articulo.view-display-id-block_3 .views-field-field-twitter, .view-id-articulo.view-display-id-block_4 .views-field-field-twitter, .view-id-articulo.view-display-id-block_5 .views-field-field-twitter, .view-id-articulo.view-display-id-block_6 .views-field-field-twitter {
-    float: left;
-    text-align: left;
-    margin-top: 15px; }
-    .view-id-articulo.view-display-id-block_1 .views-field-field-twitter a, .view-id-articulo.view-display-id-block_2 .views-field-field-twitter a, .view-id-articulo.view-display-id-block_3 .views-field-field-twitter a, .view-id-articulo.view-display-id-block_4 .views-field-field-twitter a, .view-id-articulo.view-display-id-block_5 .views-field-field-twitter a, .view-id-articulo.view-display-id-block_6 .views-field-field-twitter a {
+  .view-id-articulo.view-display-id-block_1 .views-field-field-twitter, .view-id-articulo.view-display-id-block_1 .views-field-name, .view-id-articulo.view-display-id-block_2 .views-field-field-twitter, .view-id-articulo.view-display-id-block_2 .views-field-name, .view-id-articulo.view-display-id-block_3 .views-field-field-twitter, .view-id-articulo.view-display-id-block_3 .views-field-name, .view-id-articulo.view-display-id-block_4 .views-field-field-twitter, .view-id-articulo.view-display-id-block_4 .views-field-name, .view-id-articulo.view-display-id-block_5 .views-field-field-twitter, .view-id-articulo.view-display-id-block_5 .views-field-name, .view-id-articulo.view-display-id-block_6 .views-field-field-twitter, .view-id-articulo.view-display-id-block_6 .views-field-name {
+    text-align: left; }
+    .view-id-articulo.view-display-id-block_1 .views-field-field-twitter a, .view-id-articulo.view-display-id-block_1 .views-field-name a, .view-id-articulo.view-display-id-block_2 .views-field-field-twitter a, .view-id-articulo.view-display-id-block_2 .views-field-name a, .view-id-articulo.view-display-id-block_3 .views-field-field-twitter a, .view-id-articulo.view-display-id-block_3 .views-field-name a, .view-id-articulo.view-display-id-block_4 .views-field-field-twitter a, .view-id-articulo.view-display-id-block_4 .views-field-name a, .view-id-articulo.view-display-id-block_5 .views-field-field-twitter a, .view-id-articulo.view-display-id-block_5 .views-field-name a, .view-id-articulo.view-display-id-block_6 .views-field-field-twitter a, .view-id-articulo.view-display-id-block_6 .views-field-name a {
       color: white; }
 
 .view-id-frontpage.view-display-id-block_5, .view-id-frontpage.view-display-id-block_6, .view-id-frontpage.view-display-id-block_7, .view-id-toque_tv.view-display-id-block_4 {
@@ -615,6 +610,17 @@ body {
       min-width: auto;
       height: auto;
       width: 100%; } }
+  #header #btnSuscripcion {
+    width: 260px;
+    background: #ddd;
+    height: 100%;
+    margin: 0;
+    vertical-align: top;
+    padding: 4px 2px 0 4px; }
+    @media (max-width: 480px) {
+      #header #btnSuscripcion {
+        float: left;
+        width: 100%; } }
   #header .section_logo {
     background: white;
     overflow: hidden;
@@ -776,7 +782,7 @@ body {
         #header .siguenos_menu .redes_bus a.contextual-links-trigger {
           display: none; }
       #header .siguenos_menu .redes_bus span {
-        margin: 0px 0 0 10px;
+        margin: 0px 0 0 0px;
         vertical-align: top;
         display: inline-block; }
   #header div.menu {
@@ -1162,7 +1168,11 @@ body.node-type-article .field-name-body {
     body.node-type-article .field-name-body {
       width: auto;
       padding: 10px 20px 0px;
-      margin-top: 20px; } }
+      margin-top: 20px; }
+      body.node-type-article .field-name-body iframe {
+        max-width: calc(100% + 40px);
+        left: -20px;
+        position: relative; } }
   body.node-type-article .field-name-body::first-letter {
     font-size: 50px;
     margin-right: 10px;
@@ -1361,13 +1371,13 @@ body.page-taxonomy-term-1 figure.icon {
       width: auto;
       padding: 0px; } }
   .page-quienes-somos #container #block-block-1 .float_l {
-    background: url(../images/icons/logo-toque-sport.jpg);
+    background: url(/images/logo-b.png);
     width: 450px;
     height: 350px;
     background-size: 300px;
     background-repeat: no-repeat;
     background-color: #e40613;
-    background-position: center 30px;
+    background-position: center 60px;
     margin-right: 40px;
     text-align: center;
     padding-top: 200px;
@@ -1375,6 +1385,9 @@ body.page-taxonomy-term-1 figure.icon {
     color: white; }
     @media (max-width: 480px) {
       .page-quienes-somos #container #block-block-1 .float_l {
+        background-position: center 30px;
+        padding-top: 140px;
+        height: 300px;
         width: 100%; } }
     .page-quienes-somos #container #block-block-1 .float_l .redes_bus {
       margin-bottom: 10px; }
@@ -1431,9 +1444,10 @@ body.page-taxonomy-term-1 figure.icon {
       line-height: 20px;
       color: #4d4d4d;
       height: 180px; }
-    .page-quienes-somos #container .view-id-users.view-display-id-page_1 .views-row .views-field-field-nombre {
+    .page-quienes-somos #container .view-id-users.view-display-id-page_1 .views-row .views-field-view-user a {
       font-size: 18px;
-      font-weight: 500; }
+      font-weight: 500;
+      color: black; }
     .page-quienes-somos #container .view-id-users.view-display-id-page_1 .views-row .views-field-field-twitter {
       background: #4d4d4d;
       color: white;
@@ -1837,6 +1851,35 @@ body.page-user .view-id-usuarios.view-display-id-block_1 {
         line-height: 22px; }
     body.page-user .view-id-usuarios.view-display-id-block_1 .views-row img {
       border-radius: 50%; }
+
+body.page-suscripcion [type="text"] {
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #dcdee0; }
+body.page-suscripcion [type="submit"] {
+  background: #4d4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block; }
+  body.page-suscripcion [type="submit"]:hover {
+    background: #d70c0c; }
+body.page-suscripcion form {
+  width: 500px;
+  margin: 0 auto;
+  background: #dee0e4;
+  padding: 10px 20px 20px;
+  border-radius: 10px;
+  margin-top: 20px; }
+  @media (max-width: 480px) {
+    body.page-suscripcion form {
+      width: auto;
+      border-radius: 0; } }
 
 footer {
   background: #333333;
