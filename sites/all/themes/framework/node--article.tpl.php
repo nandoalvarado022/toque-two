@@ -66,8 +66,13 @@ if(isMobile()){
 }?>
 
 <div class="sidebar_der desktop">
-	<!-- 300x250_1 -->
-	
+
+	<!-- newletter -->
+	<a href="/suscripcion">
+		<img src="/images/barra_newletter.png" alt="Suscribete a nuestro Newsletter" target="_BLANK" style="box-shadow: -1px 1px 1px #ccc;">
+	</a>
+
+	<!-- 300x250_1 -->	
 	<ins class="adsbygoogle"
 	     style="display:inline-block;width:300px;height:250px"
 	     data-ad-client="ca-pub-4733150240823723"

@@ -45,10 +45,8 @@
 					</div>
 
 					<div class="redes_bus">
-						<?php // print render($page["sidebar_first"]); //print $search_box;?>
-						<a target="_BLANK" id="btnSuscripcion" href="/suscripcion">
-							<img src="/images/toque_suscripcion.gif" alt="Suscribete el Newsletter de ToqueSports ">
-						</a>
+						<?php print render($page["sidebar_first"]); //print $search_box;?>
+						
 						<span class="siguenos desktop">
 							SÍGUENOS
 						</span>
