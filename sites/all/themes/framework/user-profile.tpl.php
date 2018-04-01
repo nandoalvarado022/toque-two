@@ -28,7 +28,15 @@
 </div>
 
 <div class="bottom">
+    <div class="botonera">
+        <span>Ordenar por</span>
+        <button onclick="cambiarVista(1)">Recientes</button>
+        <button onclick="cambiarVista(2)">Ranking de visitas</button>
+    </div>
+
     <?php print views_get_view('usuarios')->preview('block_2');?>
+
+    <?php print views_get_view('usuarios')->preview('block_3');?>    
 
     <div class="sidebar_der desktop">
         <!-- 300x600_1 -->
@@ -44,5 +52,13 @@
     </div>
 
 </div>
+
+<script>
+    function cambiarVista(sw){
+        $(".view-id-usuarios.view-display-id-block_2, .view-id-usuarios.view-display-id-block_3").removeClass("active");        
+        if(sw==2) $(".view-id-usuarios.view-display-id-block_2").addClass("active");
+        else $(".view-id-usuarios.view-display-id-block_3").addClass("active");
+    }
+</script>
 
 <!-- fin view -->
