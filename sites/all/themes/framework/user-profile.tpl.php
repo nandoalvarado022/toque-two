@@ -30,8 +30,8 @@
 <div class="bottom">
     <div class="botonera">
         <span>Ordenar por</span>
-        <button onclick="cambiarVista(1)">Recientes</button>
-        <button onclick="cambiarVista(2)">Ranking de visitas</button>
+        <button onclick="cambiarVista(2)">Recientes</button>
+        <button onclick="cambiarVista(3)">Ranking de visitas</button>
     </div>
 
     <?php print views_get_view('usuarios')->preview('block_2');?>

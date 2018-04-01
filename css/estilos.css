@@ -347,6 +347,11 @@ h3 {
   border: solid 1px #ceced0;
   padding: 10px;
   margin: 0px 0 10px 0; }
+  @media (max-width: 480px) {
+    h3 {
+      text-align: center;
+      border-left: none;
+      border-right: none; } }
 
 .time span {
   background: url(../images/icons/time.png);
@@ -1759,7 +1764,8 @@ body.page-user h1 {
   padding-left: 75px; }
 body.page-user .top {
   position: relative;
-  margin-bottom: 14px; }
+  margin-bottom: 14px;
+  height: 1180px; }
   @media (max-width: 480px) {
     body.page-user .top #img_profile {
       width: 100%;
@@ -1859,7 +1865,8 @@ body.page-user .view-id-usuarios.view-display-id-block_1 {
       border-radius: 50%; }
 body.page-user .botonera {
   bottom: 10px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  text-align: center; }
   body.page-user .botonera button {
     background: #be0811;
     color: white;
