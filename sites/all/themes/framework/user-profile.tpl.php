@@ -34,6 +34,8 @@
         <button onclick="cambiarVista(3)">Ranking de visitas</button>
     </div>
 
+    <div class="cb"></div>
+
     <?php print views_get_view('usuarios')->preview('block_2');?>
 
     <?php print views_get_view('usuarios')->preview('block_3');?>    
@@ -59,6 +61,7 @@
         if(sw==2) $(".view-id-usuarios.view-display-id-block_2").addClass("active");
         else $(".view-id-usuarios.view-display-id-block_3").addClass("active");
     }
+    cambiarVista(2);
 </script>
 
 <!-- fin view -->

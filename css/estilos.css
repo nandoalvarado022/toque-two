@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
+.cb {
+  clear: both; }
+
 .oh {
   overflow: hidden; }
 
@@ -1764,8 +1767,10 @@ body.page-user h1 {
   padding-left: 75px; }
 body.page-user .top {
   position: relative;
-  margin-bottom: 14px;
-  height: 1180px; }
+  margin-bottom: 14px; }
+  @media (max-width: 480px) {
+    body.page-user .top {
+      height: 1180px; } }
   @media (max-width: 480px) {
     body.page-user .top #img_profile {
       width: 100%;
@@ -1866,7 +1871,11 @@ body.page-user .view-id-usuarios.view-display-id-block_1 {
 body.page-user .botonera {
   bottom: 10px;
   margin-bottom: 15px;
-  text-align: center; }
+  float: left; }
+  @media (max-width: 480px) {
+    body.page-user .botonera {
+      text-align: center;
+      float: none; } }
   body.page-user .botonera button {
     background: #be0811;
     color: white;
