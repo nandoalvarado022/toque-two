@@ -68,7 +68,7 @@ if(isMobile()){
 <div class="sidebar_der desktop">
 
 	<!-- newletter -->
-	<a href="/suscripcion">
+	<a href="/suscripcion" target="_BLANK">
 		<img src="/images/barra_newletter.png" alt="Suscribete a nuestro Newsletter" target="_BLANK" style="box-shadow: -1px 1px 1px #ccc;">
 	</a>
 
