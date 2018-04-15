@@ -1079,9 +1079,10 @@ body.front {
       bottom: 30px; }
       @media (max-width: 480px) {
         body.front .view-id-frontpage.view-display-id-block_1 .views-field-view-node a {
-          position: relative;
-          float: right;
-          bottom: 35px; } }
+          bottom: 50px;
+          padding: 5px 20px;
+          right: 0;
+          background: rgba(77, 77, 77, 0.7); } }
     body.front .view-id-frontpage.view-display-id-block_1 .owl-theme .owl-controls {
       display: inline-block; }
   body.front main {

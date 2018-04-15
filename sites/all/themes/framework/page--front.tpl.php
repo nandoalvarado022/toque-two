@@ -116,7 +116,7 @@ include "header.tpl.php";?>
 	</main>
 
 	<script>
-		$(".view-id-frontpage.view-display-id-block_1 .view-content").owlCarousel({items:1, navigation:true, autoPlay: true,
+		$(".view-id-frontpage.view-display-id-block_1 .view-content").owlCarousel({items:1, navigation:true, 	autoPlay: true,
 			navText: ["&#x27;next&#x27;", "&#x27;prev&#x27;"]
 		});
 	</script>
