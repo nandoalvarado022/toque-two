@@ -92,9 +92,9 @@ if(isMobile()){
 			// echo "El valor es:". 
 			$value["tid"];
 			if ($value["tid"]==7) {
-				$twHash="ActualFutbol";
-				$nombreMostrar="ActualFutbol";
-				$fbHash="ToqueSports";
+				// $twHash="ActualFutbol";
+				// $nombreMostrar="ActualFutbol";
+				// $fbHash="ToqueSports";
 			}
 		}
 	?>

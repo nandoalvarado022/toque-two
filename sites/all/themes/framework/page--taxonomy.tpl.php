@@ -24,6 +24,10 @@ switch (arg(2)) {
 					
 					// echo $_SERVER["REQUEST_URI"];?>
 					<div class="sidebar_der">
+						<h3>Recientes</h3>
+
+						<a class="twitter-timeline" data-width="300" data-height="500" data-theme="dark" href="https://twitter.com/ToqueSports">Tweets by ToqueSports</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 						<!-- 300x250_1 -->
 							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 							<ins class="adsbygoogle"
@@ -37,6 +41,7 @@ switch (arg(2)) {
 						<?php
 						switch ($_SERVER["REQUEST_URI"]) {
 							case '/actual-futbol':?>
+								<!--
 								<h3>RECIENTES</h3>
 								<?php
 								$twHash="ActualFutbol";
@@ -46,6 +51,7 @@ switch (arg(2)) {
 								?>
 
 								<a class="twitter-timeline" data-width="300" data-height="500" data-theme="dark" href="https://twitter.com/<?php echo $twHash?>">Tweets by <?php echo $nombreMostrar?></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+								-->
 
 								<div id="fb-root"></div>
 								<script>(function(d, s, id) {
