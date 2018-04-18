@@ -21,6 +21,16 @@ $base_theme=path_to_theme();
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php print $head_title; ?></title>
+	<!-- webapp -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="ToqueSports">  
+		<link rel="apple-touch-icon" href="/images/icon_webapp.png" >
+		<link rel="apple-touch-icon" sizes="76x76" href="/images/icon_webapp.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/images/icon_webapp.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/images/icon_webapp.png">
+		<meta name="msapplication-starturl" content="latest?launchedTest" />
+	<!-- webapp -->
+
 	<?php print $styles; ?>
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="mobile-web-app-capable" content="yes">
