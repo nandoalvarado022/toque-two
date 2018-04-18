@@ -4,22 +4,22 @@
   "background_color": "red",
   "icons": [
     {
-      "src": "http://toquesports.com/images/logo-small.png",
+      "src": "/images/icon_webapp.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "http://toquesports.com/images/logo-small.png",
+      "src": "/images/icon_webapp.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "http://toquesports.com/images/logo-small.png",
+      "src": "/images/icon_webapp.png",
       "type": "image/png",
       "sizes": "192x192"
     }
   ],
-  "start_url": "/index.php",
+  "start_url": "index.php",
   "display": "standalone",
   "orientation": "landscape"
 }
