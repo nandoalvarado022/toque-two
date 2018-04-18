@@ -59,7 +59,7 @@
 						}
 
 						// echo "arg vale:".arg(2);
-						if ($toque==true || arg(2)==7) {?>
+						/*if ($toque==true || arg(2)==7) {?>
 							<a target="_BLANK" href="https://twitter.com/actualfutbol">
 								<img class="tw" src="<?php echo $base_path?>images/icons/twitter.png" />
 							</a>
@@ -88,7 +88,7 @@
 							<span style="line-height: 45px;">@ToqueSports</span>
 							<?php
 
-						} else{?>
+						} else{*/?>
 							<a target="_BLANK" href="https://twitter.com/ToqueSports">
 								<img class="tw" src="<?php echo $base_path?>images/icons/twitter.png" />
 							</a>
@@ -104,7 +104,7 @@
 							
 							<span style="line-height: 45px;">@ToqueSports</span>
 							<?php
-						}?>
+						// }?>
 					</div>
 				</div>
 				<div class="menu desktop">
