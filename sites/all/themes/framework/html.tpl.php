@@ -24,7 +24,7 @@ $base_theme=path_to_theme();
 	<?php print $styles; ?>
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="mobile-web-app-capable" content="yes">
-	<link rel="manifest" href="/manifest.json">
+	<link rel="manifest" href="/manifest.json?<?php echo date('l jS \of F Y h:i:s A'); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo $base_url?>/css/owl.theme.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $base_url?>/css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $base_url?>//css/estilos.css?<?php echo date('l jS \of F Y h:i:s A'); ?>">
