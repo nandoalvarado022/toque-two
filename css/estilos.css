@@ -8,10 +8,8 @@
 #search-block-form input::placeholder {
   color: white; }
 
-body.sin_redes_bus {
-  padding-top: 50px !important; }
-  body.sin_redes_bus .redes_bus {
-    display: none; }
+body.sin_redes_bus .redes_bus {
+  display: none; }
 
 .page-taxonomy-term h1, body.page-user h1 {
   font-weight: 900;

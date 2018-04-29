@@ -20,5 +20,5 @@
     }
   ],
   "start_url": "index.php",
-  "display": "standalone",
+  "display": "standalone"
 }

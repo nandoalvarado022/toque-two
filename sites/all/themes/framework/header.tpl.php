@@ -129,10 +129,12 @@
 	if(screen.width<=480){
 		$(window).on('scroll', function() {
 			scrollAhora=$(window).scrollTop();
-			if(scrollAntes>scrollAhora) $("body").removeClass("sin_redes_bus");
-			else $("body").addClass("sin_redes_bus");
-			console.log(scrollAntes+"-"+scrollAhora);
-			scrollAntes=scrollAhora;
+			if(scrollAhora > 100){
+				if(scrollAntes>scrollAhora) $("body").removeClass("sin_redes_bus");
+				else $("body").addClass("sin_redes_bus");
+				console.log(scrollAntes+"-"+scrollAhora);
+				scrollAntes=scrollAhora;
+			}
 		});
 	}
 </script>
