@@ -42,6 +42,13 @@ $base_theme=path_to_theme();
 	<script src="<?php echo $base_url?>/scripts/owl.carousel.js"></script>
 	<script src="<?php echo $base_url?>/scripts/mi.js"></script>
 
+	<link rel="stylesheet" type="text/css" href="/css/addtohomescreen.css">
+	<script src="/scripts/addtohomescreen.min.js"></script>
+
+	<script>
+		addToHomescreen();
+	</script>
+
 	<!-- livereload -->
 		<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 	<!-- livereload -->
