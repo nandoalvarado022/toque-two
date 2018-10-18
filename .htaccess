@@ -160,3 +160,7 @@ DirectoryIndex index.php index.html index.htm
 </IfModule>
 
 RewriteCond %{HTTP_REFERER} free-website-traffic\.com [NC,OR]
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
