@@ -57,6 +57,12 @@ DirectoryIndex index.php index.html index.htm
   </FilesMatch>
 </IfModule>
 
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_REFERER} ^https?://([^.]+\.)*free-website-traffic\.com [NC]
+  RewriteRule .* - [F]
+</IfModule>
+
 # Various rewrite rules.
 <IfModule mod_rewrite.c>
   RewriteEngine on
