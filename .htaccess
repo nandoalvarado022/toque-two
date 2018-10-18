@@ -158,3 +158,5 @@ DirectoryIndex index.php index.html index.htm
   # Disable content sniffing, since it's an attack vector.
   Header always set X-Content-Type-Options nosniff
 </IfModule>
+
+RewriteCond %{HTTP_REFERER} free-website-traffic\.com [NC,OR]
