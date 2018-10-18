@@ -152,3 +152,10 @@ DirectoryIndex index.php index.html index.htm
   # Disable content sniffing, since it's an attack vector.
   Header always set X-Content-Type-Options nosniff
 </IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php56” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddType application/x-httpd-ea-php56 .php .php5 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
