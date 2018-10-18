@@ -57,12 +57,6 @@ DirectoryIndex index.php index.html index.htm
   </FilesMatch>
 </IfModule>
 
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{HTTP_REFERER} ^https?://([^.]+\.)*free-website-traffic\.com [NC]
-  RewriteRule .* - [F]
-</IfModule>
-
 # Various rewrite rules.
 <IfModule mod_rewrite.c>
   RewriteEngine on
@@ -158,9 +152,3 @@ DirectoryIndex index.php index.html index.htm
   # Disable content sniffing, since it's an attack vector.
   Header always set X-Content-Type-Options nosniff
 </IfModule>
-
-RewriteCond %{HTTP_REFERER} free-website-traffic\.com [NC,OR]
-
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
