@@ -183,4 +183,4 @@ if(isMobile()){
 </script>
 
 <!-- Sharethis -->
-<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58b206201d713c001295ee1f&product=sticky-share-buttons"></script>
+<!-- <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58b206201d713c001295ee1f&product=sticky-share-buttons"></script> -->
